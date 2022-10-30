@@ -6,11 +6,11 @@ const maxX = background.clientWidth - ball.clientWidth;
 const maxY = background.clientHeight - ball.clientHeight;
 
 function handleOrientation(event) {
-  let x = event.beta; // In degree in the range [-180,180)
-  let y = event.gamma; // In degree in the range [-90,90)
+  let x = event.gamma; // In degree in the range [-180,180)
+  let y = event.beta; // In degree in the range [-90,90)
 
-  output.textContent = `beta : ${x}\n`;
-  output.textContent += `gamma: ${y}\n`;
+  output.textContent = `gamma : ${x}\n`;
+  output.textContent += `betta: ${y}\n`;
 
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
