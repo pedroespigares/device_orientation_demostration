@@ -14,11 +14,11 @@ function handleOrientation(event) {
 
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
-  if (x > 90) {
-    x = 90;
+  if (y > 90) {
+    y = 90;
   }
-  if (x < -90) {
-    x = -90;
+  if (y < -90) {
+    y = -90;
   }
 
   // To make computation easier we shift the range of
